@@ -1,4 +1,4 @@
-## 🧠 Nesta apostila, iremos aprender:
+## 🧠 Flutter:
 
 ### 1. Fundamentos do Framework & Dart
 * **Manipulação de Estados:** Compreender a diferença prática e o ciclo de vida de `StatelessWidget` e `StatefulWidget`.
