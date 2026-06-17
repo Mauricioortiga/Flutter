@@ -1,4 +1,4 @@
-## 🧠 O que estou aprendendo com o estudo de Flutter?
+## 🧠 Nesta apostila, iremos aprender:
 
 ### 1. Fundamentos do Framework & Dart
 * **Manipulação de Estados:** Compreender a diferença prática e o ciclo de vida de `StatelessWidget` e `StatefulWidget`.
