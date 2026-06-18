@@ -1,0 +1,50 @@
+import 'package:flutter/material.dart';
+
+- O pacote material.dart é um pacote que contém os widgets e temas do material design. Ele é necessário para criar aplicativos de material design com Flutter.
+
+main () => runApp(PerguntaApp()); 
+
+- A função main é a função de entrada do aplicativo. Ela é chamada quando o aplicativo é iniciado e é onde você deve chamar a função runApp para iniciar o aplicativo.
+
+runApp(PerguntaApp());
+
+- A função runApp é a função principal do Flutter que inicia o aplicativo. Ela recebe um widget como argumento, que é o widget raiz do aplicativo. Neste caso, estamos passando o widget PerguntaApp como o widget raiz do aplicativo.
+
+class PerguntaApp extends StatelessWidget {
+
+- StatelessWidget é um widget que não tem estado. Ele é imutável e é construído apenas uma vez. Ele é usado para criar widgets que não precisam de estado, como botões, textos e imagens.
+    
+  @override  
+
+- A anotação @override é usada para indicar que um método está sendo sobrescrito de uma classe pai. Neste caso, estamos sobrescrevendo o método build da classe StatelessWidget.
+
+  Widget build(BuildContext context) {
+
+- O método build é onde você constrói a interface do usuário do seu aplicativo. Ele é chamado sempre que o widget precisa ser reconstruído, como quando o estado muda ou quando o widget é inserido na árvore de widgets.
+
+  return MaterialApp(
+
+- MaterialApp é um widget que envolve um número de widgets que são comumente necessários para aplicativos de material design. Ele é o widget raiz do aplicativo e fornece temas, navegação e outros recursos.
+
+    home: Scaffold(
+
+- Scaffold é uma estrutura de layout para o material design. Ele fornece APIs para mostrar drawers, snack bars e bottom sheets.
+
+      appBar: AppBar(
+
+- AppBar é um widget de barra de aplicativo que pode ser usado para mostrar um título, ações e outros widgets.
+
+        title: Text('Perguntas'),
+
+- Text é um widget que exibe uma string de texto com um único estilo. Ele é usado para mostrar texto na tela.
+
+      ),
+      body: Center(
+
+- O corpo do Scaffold é onde o conteúdo principal da tela é exibido. Neste caso, estamos exibindo um widget de texto que diz "Olá Flutter".
+
+      ),
+    ),;
+  }
+}
+
